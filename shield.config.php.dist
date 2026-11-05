@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * PHP Shield Configuration File
+ * ================================================
+ *
+ * Copy this file to `shield.config.php` in your project root and
+ * customize it to enable/disable detectors, adjust severity levels,
+ * or set a minimum severity threshold.
+ *
+ * This file is loaded automatically by the `scan` command when
+ * the --config option points to it (or when shield.config.php exists).
+ *
+ * All values are merged with the built-in defaults, so you only need
+ * to specify the keys you want to change.
+ */
+
+return [
+    /*
+     * Detectors to enable. Set to false to disable a detector.
+     * New detectors can be added here once implemented.
+     */
+    'detectors' => [
+        'sql-injection'         => true,
+        'xss'                   => true,
+        'command-injection'     => true,
+        'unsafe-deserialization' => true,
+        'unsafe-include'        => true,
+    ],
+
+    /*
+     * Per-detector severity. Used by reporters and the hardener.
+     * Possible values: critical, high, medium, low
+     */
+    'severity' => [
+        'sql-injection'         => 'critical',
+        'xss'                   => 'high',
+        'command-injection'     => 'critical',
+        'unsafe-deserialization' => 'high',
+        'unsafe-include'        => 'medium',
+    ],
+
+    /*
+     * Only issues at or above this severity will be reported.
+     */
+    'min-severity' => 'medium',
+
+    /*
+     * Additional configuration options (future extensions):
+     */
+    'ignore' => [
+        'vendor/**/*',
+        'tests/**/*',
+        'storage/framework/**/*',
+    ],
+
+    /*
+     * Custom rules can be registered here when the rule engine
+     * is extended. Example:
+     *
+     * 'custom-rules' => [
+     *     'MyCustomRule' => ['severity' => 'high'],
+     * ],
+     */
+];

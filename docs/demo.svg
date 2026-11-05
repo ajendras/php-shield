@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="572" viewBox="0 0 900 572" role="img" aria-label="PHP Shield — demo">
+  <style>
+    text{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:15px}
+    .l{opacity:0}
+    .ty{clip-path:inset(0 100% 0 0)}
+    .cur{animation:blink 1s steps(1) infinite}
+    @keyframes show{to{opacity:1}}
+    @keyframes type{to{clip-path:inset(0 0 0 0)}}
+    @keyframes blink{50%{opacity:0}}
+    @media (prefers-reduced-motion:reduce){.l{opacity:1;animation:none!important}.ty{clip-path:none;animation:none!important}}
+  </style>
+  <rect width="900" height="572" rx="14" fill="#0d1117"/>
+  <rect x=".5" y=".5" width="899" height="572" rx="14" fill="none" stroke="#30363d"/>
+  <rect width="900" height="40" rx="14" fill="#161b22"/><rect y="26" width="900" height="14" fill="#161b22"/>
+  <circle cx="24" cy="20" r="6" fill="#ff5f57"/><circle cx="44" cy="20" r="6" fill="#febc2e"/><circle cx="64" cy="20" r="6" fill="#28c840"/>
+  <text x="450" y="25" text-anchor="middle" fill="#8b949e" style="font-size:13px">PHP Shield — demo</text>
+<text x="28" y="74" class="l" style="animation:show .01s 0.60s forwards"><tspan fill="#06b6d4">❯</tspan></text><text x="50" y="74" class="l ty" style="animation:show .01s 0.60s forwards,type 1.98s steps(44) 0.60s forwards" fill="#e5e7eb">composer global require phpshield/php-shield</text>
+<text x="50" y="100" class="l" style="animation:show .01s 2.88s forwards" fill="#4ade80">✓ Installed php-shield:1.0.0</text>
+<text x="50" y="126" class="l" style="animation:show .01s 3.10s forwards" fill="#94a3b8">Run &apos;php-shield --help&apos; to see available commands</text>
+<text x="28" y="178" class="l" style="animation:show .01s 3.67s forwards"><tspan fill="#06b6d4">❯</tspan></text><text x="50" y="178" class="l ty" style="animation:show .01s 3.67s forwards,type 0.68s steps(15) 3.67s forwards" fill="#e5e7eb">php-shield init</text>
+<text x="50" y="204" class="l" style="animation:show .01s 4.65s forwards" fill="#94a3b8">Created shield.config.php with sensible defaults</text>
+<text x="50" y="230" class="l" style="animation:show .01s 4.87s forwards" fill="#94a3b8">Detected 3 custom detectors and enabled OWASP ruleset</text>
+<text x="28" y="282" class="l" style="animation:show .01s 5.44s forwards"><tspan fill="#06b6d4">❯</tspan></text><text x="50" y="282" class="l ty" style="animation:show .01s 5.44s forwards,type 1.53s steps(34) 5.44s forwards" fill="#e5e7eb">php-shield scan . --format=console</text>
+<text x="50" y="308" class="l" style="animation:show .01s 7.27s forwards" fill="#94a3b8">Scanning 124 files [==========] 100%</text>
+<text x="50" y="334" class="l" style="animation:show .01s 7.49s forwards" fill="#94a3b8">Found 7 issues (3 high, 3 medium, 1 low)</text>
+<text x="50" y="360" class="l" style="animation:show .01s 7.71s forwards" fill="#94a3b8">HIGH: SQL injection in UserRepository.php:42 → use prepared statement</text>
+<text x="28" y="412" class="l" style="animation:show .01s 8.28s forwards"><tspan fill="#06b6d4">❯</tspan></text><text x="50" y="412" class="l ty" style="animation:show .01s 8.28s forwards,type 1.04s steps(23) 8.28s forwards" fill="#e5e7eb">php-shield scan . --fix</text>
+<text x="50" y="438" class="l" style="animation:show .01s 9.62s forwards" fill="#94a3b8">Applied 4 automatic fixes (SQLi + XSS)</text>
+<text x="50" y="464" class="l" style="animation:show .01s 9.84s forwards" fill="#94a3b8">3 files changed • backup written to .shield/backup-20250101</text>
+<text x="50" y="490" class="l" style="animation:show .01s 10.06s forwards" fill="#94a3b8">All issues resolved. Re-run scan to confirm.</text>
+<g class="l" style="animation:show .01s 10.63s forwards"><text x="28" y="542" fill="#06b6d4">❯</text><rect class="cur" x="50" y="527" width="10" height="18" fill="#e5e7eb"/></g>
+</svg>
